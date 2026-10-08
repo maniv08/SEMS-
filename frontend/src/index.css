@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: #F6F8FA;
+    --surface: #FFFFFF;
+    --border: #E5E9F0;
+    --text-primary: #0F172A;
+    --text-muted: #64748B;
+    --brand: #10B981;
+    --accent: #3B82F6;
+    --warning: #F59E0B;
+    --critical: #EF4444;
+    --violet: #8B5CF6;
+    --radius-card: 14px;
+    --shadow-card: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+  }
+
+  .dark {
+    --bg: #0B1220;
+    --surface: #111A2E;
+    --border: #1E293B;
+    --text-primary: #E6EDF7;
+    --text-muted: #94A3B8;
+    --brand: #10B981;
+    --accent: #3B82F6;
+    --warning: #F59E0B;
+    --critical: #EF4444;
+    --violet: #8B5CF6;
+    --radius-card: 14px;
+    --shadow-card: 0 1px 3px rgba(0,0,0,0.4), 0 1px 2px rgba(0,0,0,0.2);
+  }
+
+  body {
+    @apply bg-background text-primary font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
